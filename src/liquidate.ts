@@ -82,6 +82,12 @@ async function runLiquidator() {
             if (!selectedDeposit || deposit.marketValue.gt(selectedDeposit.marketValue)) {
               selectedDeposit = deposit;
             }
+
+          console.log("***DEBUG LOG*** selectDesposit: " + selectedDeposit);
+          console.log("***DEBUG LOG*** deposit.marketValue.gt:" + deposit.marketValue.gt);
+          console.log("***DEBUG LOG*** selectDeposit.marketValue: " + selectedDeposit.marketValue);
+          console.log("***DEBUG LOG*** deposit: " + deposit);
+          
           });
 
           if (!selectedBorrow || !selectedDeposit) {
